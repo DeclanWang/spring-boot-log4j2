@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: log-learning
+  profiles:
+    active: qa
+
+
+server:
+  port: 8080
+
+logging:
+  config: classpath:log4j2-${spring.profiles.active}.xml
+
+
